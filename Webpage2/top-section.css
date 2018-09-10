@@ -1,0 +1,96 @@
+#top{
+    
+}
+
+#top .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 80px 0;
+    align-items: center;
+}
+#top .info{
+   padding:  15px;
+   position: relative;
+}
+#top .info .blue-square{
+    border: 5px solid #dbf1ff;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+    top: -70%;
+    left: -50%;
+}
+#top .info h1{
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #16171b;
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+#top .info p{
+    color: #919191;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    z-index: 1;
+    position: relative;
+}
+
+#top .info a{
+    position: relative;
+    color: #16171b;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+    z-index: 1;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+#top .img{
+    
+}
+/* import image from webpage2 folder */
+#top .img .background-img{
+    background: url(../Webpage2/shades1.jpg);
+    width: 100%;
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    z-index: 1;
+    margin: 0 auto;
+    
+}
+/* ipads */
+@media only screen and (max-width: 960px){
+    #top .container{
+        padding: 0 0 80;
+        }
+        #top .info .blue-square{
+            display: none;
+        
+        }
+        #top .img .background-img{
+            height: 100vh;
+        }
+        
+}
+/* phones */
+@media only screen and (max-width: 767px){
+    #top .container{
+padding: 0 0 80;
+}
+#top .info .blue-square{
+    display: none;
+
+}
+#top .img .background-img{
+    height: 100vh;
+}
+}
