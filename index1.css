@@ -1,0 +1,187 @@
+#experience-section{
+    padding: 380px 15px;
+}
+
+#experience-section .large-title{
+    color: blueviolet;
+    font-weight: 900;
+    font-size: 4.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#experience-section .experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#experience-section .experience-container .large-icons .square{
+    border: 20px solid rgb(64, 145, 151);
+    padding: 8px;
+    display: inline-block;
+
+}
+
+#experience-section .experience-container .large-icons .square
+.blue-box{
+    width: 150px;
+    padding: 5px;
+    height: 150px;
+    background: rgb(64, 145, 151);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+#experience-section .experience-container .large-icons .circle{
+    border: 20px solid rgb(162, 197, 96);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    top: 95px;
+    left: 50px;
+    
+}
+#experience-section .experience-container .large-icons .white-box{
+    color: rgb(112, 151, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+   
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+#experience-section .experience-container .info{
+    padding: 80px 0 0;
+}
+
+#experience-section .experience-container .info .info-box {
+    padding: 15px;
+
+}
+
+#experience-section .experience-container .info .info-box h4{
+    color: blue;
+    font-size:  1.1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#experience-section .experience-container .info .info-box .date{
+    color: rebeccapurple;
+    font-size:  1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 15px 0;
+    display: block;
+}
+
+
+
+#experience-section .experience-container .info .info-box p{
+    color: #b2b2b4;
+    font-size:  .9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    display: block;
+    line-height: 1.8;
+}
+
+
+
+/* create a triangle using css */
+#experience-section .experience-container .large-icons .triangle{
+    width: 0;
+    height:0;
+    border-style: solid;
+    border-width: 0 150px 230px 150px;
+    border-color: transparent transparent #ff5253 transparent;
+    position: relative;
+}
+
+#experience-section .experience-container .large-icons .triangle .triangle-box {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 93.75px 151.75px 93.75px;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    left: -94px;
+    top: 49px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ff5253;
+}
+
+#experience-section .experience-container .large-icons .triangle .triangle-box  .text1{
+position: relative;
+top: 98px;
+left: -29px;
+}
+
+/* ipads */
+@media only screen and (max-width: 960px){
+
+    #experience-section .large-title{
+        font-size: 3rem;
+        left:0;
+    }
+
+    #experience-section .experience-container .large-icons{
+    position: relative;
+    top: -25px;
+    }
+    #experience-section .experience-container .large-icons .circle{
+        border: 20px solid yellowgreen;
+        padding: 5px;
+        display: inline-block;
+        position: relative;
+        top: 122px;
+        left: 48px;
+    }
+}
+/* phones */
+@media only screen and (max-width: 767px){
+  #experience-section .large-title{
+    
+    font-size: 2.5rem;  
+    left:0;
+
+  }
+
+    #experience-section .experience-container{
+        grid-template-columns: 1fr;
+    }
+    #experience-section .experience-container .large-icons{
+        display: none;
+        }
+
+
+#experience-section .experience-container .info .info-box h4{
+    font-size: 1rem;
+}
+#experience-section .experience-container .info .info-box .date{
+ font-size: 1rem;
+}
+}
